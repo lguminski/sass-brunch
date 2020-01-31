@@ -50,6 +50,7 @@ const formatError = (path, err) => {
 
 class SassCompiler {
   constructor(cfg = {}) {
+	  console.log(`Brunch config ${JSON.stringify(cfg)}`)
     this.rootPath = cfg.paths.root;
     this.optimize = cfg.optimize;
     this.config = cfg.plugins && cfg.plugins.sass || {};
